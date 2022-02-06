@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+nav a{
+    margin-right: 34px;
+    color: #3A3A3A;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 87px 120px;
+    color:#3A3A3A;
+}
+nav h3{
+    font-size: 24px;
+    margin: 0;
+    padding:0;
+}
+
+/* top section */
+.top-section{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.top-section h2{
+    font-size: 52px;
+}
+.top-section>span{
+    width: 582px;
+    height: 270px;  /* prevents extra lines from being visible */
+
+}
+.top-section p{
+    margin-bottom: 45px;
+}
+.btn{
+    background-color: #E02C6D;
+    color:#FFFFFF;
+    padding: 10px 24px;
+}
+.btn.round{
+    background-color: #E02C6D;
+    color:#FFFFFF;
+    padding: 10px 24px;
+    border-radius: 41px;
+    
+}
+.btn.round .fas{
+    margin:  0 8px;
+}
+/* Brands */
+.brands{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 300px 165px;
+    padding: 50px 0px;
+    border-top: 2px solid rgba(187, 187, 187, 0.2);
+    border-bottom:2px solid rgba(187, 187, 187, 0.2);
+}
+/*popular-collections */
+.popular-collections h2{
+    text-align: center;
+    font-size: 42px;
+    
+}
+.collections{
+display: grid;
+place-items: center;
+grid-template-columns: repeat(3,1fr);
+margin:0 196px;
+
+}
+.collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:30px;
+    margin-bottom: 30px;
+    padding:  15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px #c9c6c6, -5px -5px 3px #ffffff;
+}
+/* Stars */
+.fa-star.filled{
+    color:#FB8200;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+}
+/* see more */
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:225px;
+    
+}
+.see-more a{
+    color: #E02C6D;
+}
+.see-more .fas{
+    margin-left: 8px;
+}
+/* Featured section */
+.featured{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 195px;
+ 
+}
+.featured-items{
+    display: flex;
+    gap: 96px;
+    
+}
+.featured-items>span>div{
+    margin-top: 50px;
+}
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A0826;
+    height: 239px;
+    width: auto;
+    color: #FFFFFF;
+}
+footer a{
+    color:#FFFFFF;
+}
+footer p{
+    font-family: sans-serif;
+    text-align: center;
+}
+/* Social Links */
+.social-links{
+    margin-right:0px;
+}
+.social-links a{
+    margin-left: 16px;
+    border-radius: 100%;
+    padding: 3px 6px 1px 6px;
+    background: #252525;
+    color:#ffffff;
+}
+.social-links a:hover{
+    color:cornflowerblue;
+}
+
+/* Media Query */
+@media only screen and (max-width:688px) {
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        }
+    .featured-items{
+        flex-direction: column;
+        margin-left: 25px;
+    }
+    .brands{
+       flex-direction: row;
+       flex-wrap: wrap;
+       margin:5px;   
+    }
+    .brands img{
+        margin: 5px 8px;
+    }
+    .top-section{
+        flex-direction: column;
+        height: auto;
+        width: 5px;
+        gap: 100px;
+        
+    }
+    .top-section>span{
+        width: 400px;
+        height: auto;
+        margin: 14px 18px;
+    }
+    .top-section img{
+        display: none;
+    }
+    .top-section h2{
+        font-size: 28px;
+    }
+    
+    .top-section img{
+        width: 50%;
+    }
+    nav{
+        justify-content: center;
+    }
+    .nav-item{
+        display: none;
+    }
+    nav h3{
+        font-size: 35px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .popular-collections h2{
+        font-size: 25px;
+    }
+    }
+    @media only screen and (min-width:688px) and (max-width:992px) {
+        
+        .collections{
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+            }
+            .featured-items{
+                flex-direction: column;
+                margin-left: 0px;
+            }
+            nav {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            nav h3{
+                margin-bottom: 30px;
+            }
+          .brands{
+              justify-content: center;
+          }
+          .brands img{
+              margin-right: 16px;
+          }
+          .top-section>span{
+              margin-left: 20px;
+          }
+    }
